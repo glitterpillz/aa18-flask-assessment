@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Instrument Form</title>
+</head>
+<body>
+    <form method="post" action="/new-instrument">
+        {{ form.csrf_token }}
+        <div>{{ form.date_bought.label }} {{ form.date_bought }}</div>
+        <div>{{ form.nickname.label }} {{ form.nickname }}</div>
+        <div>{{ form.year.label }} {{ form.year }}</div>
+        <div>{{ form.maker.label }} {{ form.maker }}</div>
+        <div>{{ form.type.label }} {{ form.type }}</div>
+        <div>{{ form.used.label }} {{ form.used }}</div>
+        <div>{{ form.submit }}</div>
+    </form>
+</body>
+</html>

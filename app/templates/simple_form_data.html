@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Instrument Data</title>
+</head>
+<body>
+    {% for instrument in result %}
+    <div>{{ instrument.date_bought }}</div>
+    <div>{{ instrument.nickname }}</div>
+    <div>{{ instrument.year }}</div>
+    <div>{{ instrument.maker }}</div>
+    <div>{{ instrument.type }}</div>
+    <div>{{ instrument.used }}</div>
+    {% endfor %}
+</body>
+</html>
